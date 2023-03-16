@@ -83,7 +83,7 @@ bool isWin() {
     int xWin = 'X' + 'X' + 'X';
     int oWin = 'O' + 'O' + 'O';
     for(int i{0}; i < 3; i++) {
-        int row = board[i] + board[1+i] + board[2+i];
+        int row = board[i*3] + board[1+i*3] + board[2+i*3];
         if(row == xWin) {
             player = 1;
             winner();
