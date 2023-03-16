@@ -109,7 +109,7 @@ bool isWin() {
         }
     }
     int lB = board[0] + board[4] + board[8];
-    int rU = board[0] + board[4] + board[8];
+    int rU = board[6] + board[4] + board[2];
     if(lB == xWin) {
         player = 1;
         winner();
